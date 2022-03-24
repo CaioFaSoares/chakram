@@ -7,4 +7,4 @@ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion next react r
 npm i -D eslint eslint-config-next prettier
 ```
 
-> test push
+> test push again. i sure hope it does work
