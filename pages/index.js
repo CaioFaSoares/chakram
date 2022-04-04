@@ -13,7 +13,7 @@ const Page = () => {
                     Caio Soares
                 </Heading>
                 <p>
-                    Designer and Developer based in Fortaleza, Brazil.
+                    Internet Artisian (Designer and Developer)
                 </p>
             </Box>
             </Box>
