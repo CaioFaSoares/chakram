@@ -16,15 +16,16 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import { IoLogoGithub, IoLogoBehance } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
-    const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
+    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
         <NextLink href={href}>
             <Link
             p={2}
-            bg={active ? 'glassTeal' : undefined}
+            bg={active ? 'tomato' : undefined}
             color={active ? '#202023' : inactiveColor}
         >
             {children}
@@ -46,7 +47,14 @@ const Navbar = props => {
         zIndex={1}
         {...props}
         >
-            <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
+            <Container
+                display="flex"
+                p={2}
+                maxW="container.md"
+                wrap="wrap"
+                align="center"
+                justify="space-between"
+            >
                 <Flex align="center" mr={5}>
                     <Heading as="h1" size="lg" letterSpacing={'tighter'}>
                         <Logo />
@@ -54,18 +62,41 @@ const Navbar = props => {
                 </Flex>
 
                 <Stack
-                direction={{base:'column', md:'row'}}
-                display={{base:'none', md:'flex'}}
-                width={{base:'full', md:'auto'}}
-                alignItems='center'
-                flexGrow={1}
-                mt={{base: 4, nmd: 0}}
+                    direction={{base:'column', md:'row'}}
+                    display={{base:'none', md:'flex'}}
+                    width={{base:'full', md:'auto'}}
+                    alignItems='center'
+                    flexGrow={1}
+                    mt={{base: 4, md: 0}}
+                    ms={2}
                 >
                     <LinkItem href="/works" path={path}>
                     Works
                     </LinkItem>
                     <LinkItem href="/posts" path={path}>
                     Posts
+                    </LinkItem>
+                    <LinkItem
+                        target="_blank"
+                        href="https://github.com/CaioFaSoares"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                        style={{ gap: 4 }}
+                        pl={2}
+                    >
+                        <IoLogoGithub/>
+                    </LinkItem>
+                    <LinkItem
+                        target="_blank"
+                        href="https://www.behance.net/caiosoares1"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                        style={{ gap: 4 }}
+                        pl={2}
+                    >
+                        <IoLogoBehance />
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align='right'>
