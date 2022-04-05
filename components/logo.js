@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const LogoBox = styled.span`
 font-weight: bold;
 font-size: 18px;
-display: inline-flex;
+display: inline-center;
 align-items: center;
 height: 30px;
 line-height: 20px;
@@ -29,19 +29,18 @@ const Logo = () => {
         <Link href="/">
             <a>
                 <LogoBox>
-
                     <motion.div
-                        style={{ width: 'min-content'}}
                         whileHover={{
                             position: 'relative',
                             zIndex: 1,
-                            scale: 1.1,
+                            scale: 1.2,
                             transition: {
-                                duration: 0.3
+                                duration: 0.1
                             }
                         }}
-                    ></motion.div>
-                    <Image src={footPrintImg} width={20} height={20} alt="logo"/>
+                    >
+                        <Image src={footPrintImg} width={20} height={20} alt="logo"/>
+                    </motion.div>
                     <Text
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily="M PLUS Rounded 1c"
