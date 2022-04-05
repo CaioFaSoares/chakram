@@ -16,17 +16,17 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub, IoLogoBehance } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoBehance, IoLogoLinkedin } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
-        <NextLink href={href}>
+        <NextLink href={href} passHref>
             <Link
-            p={2}
-            bg={active ? 'tomato' : undefined}
-            color={active ? '#202023' : inactiveColor}
+                p={2}
+                bg={active ? 'orange' : undefined}
+                color={active ? '#202023' : inactiveColor}
         >
             {children}
             </Link>
@@ -97,6 +97,17 @@ const Navbar = props => {
                         pl={2}
                     >
                         <IoLogoBehance />
+                    </LinkItem>
+                    <LinkItem
+                        target="_blank"
+                        href="https://www.linkedin.com/in/caio-soares-3153341a1/"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                        style={{ gap: 4 }}
+                        pl={2}
+                    >
+                        <IoLogoLinkedin />
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align='right'>
