@@ -1,6 +1,10 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import { Button, Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
 import Section from '../components/section'
+import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import NextLink from 'next/link'
+import Head from 'next/head'
 
 const Page = () => {
 
@@ -36,18 +40,59 @@ const Page = () => {
             </Box>
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    Skills
+                    Intro
                 </Heading>
                 <Paragraph>
-                    Paragraph 
+                    Since 2020, I have worked in both marketing agencies and development
+                    houses, both as a designer and developer.
+                    Currently I'm studying iOS development and Design Thinking at the
+                    Apple Developer Academy in Fortaleza, Ceará.
+                    I've also done creative work for two brazilian Street-Wear brands and a
+                    collective project called Homemade.
                 </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightIcon/>} colorScheme={useColorModeValue('purple', 'orange')}>
+                            My portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
             </Section>
-            <Section delay={0.1}>
+            <Section delay={0.2}>
                 <Heading as="h3" variant="section-title">
-                    Work
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>2000</BioYear>
+                    Born in Fortaleza, Ceará.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2017</BioYear>
+                    Graduated from high school.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2020</BioYear>
+                    Got accepted to study Computer Engineering at the Federal Institute of Education, Science and Technology of Ceará.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2020</BioYear>
+                    Started working on PorCoral, a marketing agency located in Fortaleza as a designer.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021</BioYear>
+                    Started working on Aurean, german start-up developing a CRM and Risk Management tool for supply chains as a designer and full-stack developer.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021 to present</BioYear>
+                    Got accepted into the Apple Developer Academy, located in Fortaleza, Ceará
+                </BioSection>
+            </Section>
+            <Section delay={0.3}>
+                <Heading as="h3" variant="section-title">
+                    Interests
                 </Heading>
                 <Paragraph>
-                    Paragraph 
+                    Art, Design, Emulation, Games, Horror Movies, Programing, Punk Music and Tinkering
                 </Paragraph>
             </Section>
         </Container>

@@ -141,6 +141,9 @@ const Navbar = props => {
                                 <MenuItem as={Link} href="https://www.behance.net/caiosoares1">
                                         Behance
                                 </MenuItem>
+                                <MenuItem as={Link} href="https://www.linkedin.com/in/caio-soares-3153341a1/">
+                                        Linkedin
+                                </MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>
