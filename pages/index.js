@@ -12,7 +12,11 @@ const Page = () => {
 
     return (
         <Container>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mt={3} mb={6} align="center">
+            <Box
+            borderRadius="lg"
+            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+            p={3} mt={3} mb={6} align="center"
+            >
                 Hi, I&apos;m a designer and front-end developer based in Brazil
             </Box>
 
@@ -45,9 +49,9 @@ const Page = () => {
                 <Paragraph>
                     Since 2020, I have worked in both marketing agencies and development
                     houses, both as a designer and developer.
-                    Currently I'm studying iOS development and Design Thinking at the
+                    Currently I&apos;m studying iOS development and Design Thinking at the
                     Apple Developer Academy in Fortaleza, Ceará.
-                    I've also done creative work for two brazilian Street-Wear brands and a
+                    I&apos;ve also done creative work for two brazilian Street-Wear brands and a
                     collective project called Homemade.
                 </Paragraph>
                 <Box align="center" my={4}>
