@@ -1,8 +1,8 @@
 import { Button, Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import Head from 'next/head'
 
@@ -30,7 +30,7 @@ const Page = () => {
                         undergraduate and iOS Developer at the Apple Developer Academy.
                     </p>
                 </Box>
-                <Box flexShrink={0} mt={{base:4, md:0}} ml={{md:6}} align="center">
+                <Box flexShrink={0} align="center" mt={{base:4, md:0}} ml={{md:6}}>
                     <Image
                         borderColor="whiteAlpha.500"
                         borderWidth={1}
