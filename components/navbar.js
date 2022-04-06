@@ -166,6 +166,11 @@ const Navbar = props => {
                                         Skills
                                     </MenuItem>
                                 </NextLink>
+                                <NextLink href="/contact" passHref>
+                                    <MenuItem as={Link}>
+                                        Contact
+                                    </MenuItem>
+                                </NextLink>
                                 <MenuItem as={Link} href="https://github.com/CaioFaSoares">
                                         Github
                                 </MenuItem>
