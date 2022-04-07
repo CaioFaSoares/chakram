@@ -1,4 +1,4 @@
-import { Button, Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import { Button, Container, Box, Heading, Image, useColorModeValue, Divider } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
@@ -49,9 +49,9 @@ const Page = () => {
                 <Paragraph>
                     Since 2020, I have worked in both marketing agencies and development
                     houses, both as a designer and developer.
-                    Currently I&apos;m studying iOS development and Design Thinking at the
+                    Currently I&apos;m studying iOS development and its design pattern at the
                     Apple Developer Academy in Fortaleza, Ceará.
-                    I&apos;ve also done creative work for two brazilian Street-Wear brands and a
+                    I&apos;ve also done creative work for two brazilian streetwear brands and a
                     collective project called Homemade.
                 </Paragraph>
                 <Box align="center" my={4}>
@@ -61,6 +61,9 @@ const Page = () => {
                         </Button>
                     </NextLink>
                 </Box>
+            </Section>
+            <Section delay={0.1}>
+                <Divider/>
             </Section>
             <Section delay={0.2}>
                 <Heading as="h3" variant="section-title">
@@ -88,7 +91,7 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                     <BioYear>2021 to present</BioYear>
-                    Got accepted into the Apple Developer Academy, located in Fortaleza, Ceará
+                    Studying in the Apple Developer Academy, located in Fortaleza, Ceará
                 </BioSection>
             </Section>
             <Section delay={0.3}>
@@ -96,7 +99,7 @@ const Page = () => {
                     Interests
                 </Heading>
                 <Paragraph>
-                    Art, Design, Emulation, Games, Horror Movies, Programing, Punk Music and Tinkering
+                    Art, design, emulation, games, horror movies, programming, punk music and tinkering.
                 </Paragraph>
             </Section>
         </Container>

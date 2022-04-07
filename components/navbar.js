@@ -18,16 +18,20 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub, IoLogoBehance, IoLogoLinkedin } from 'react-icons/io5'
+import { MenuDivider } from '@chakra-ui/react'
 
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
+    const activeColor = useColorModeValue('whiteAlpha.900', 'blackAlpha.900')
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    const bgColor = useColorModeValue('purple.500', 'orange')
     return (
         <NextLink href={href} passHref>
             <Link
                 p={2}
-                bg={active ? 'orange' : undefined}
-                color={active ? '#202023' : inactiveColor}
+                borderRadius="lg"
+                bg={active ? bgColor : undefined}
+                color={active ? activeColor : inactiveColor}
         >
             {children}
             </Link>
@@ -45,7 +49,7 @@ const Contact = ({path}) => {
     )
 }
 
-const NoContact = () => { 
+const NoContact = () => {
     return (
         <Text
             style={{ textDecorationLine: 'line-through' }}
@@ -97,9 +101,6 @@ const Navbar = props => {
                     </LinkItem>
                     <LinkItem href="/posts" path={path}>
                     Posts
-                    </LinkItem>
-                    <LinkItem href="/skills" path={path}>
-                    Skills
                     </LinkItem>
                     <Contact />
                     <LinkItem
@@ -161,16 +162,12 @@ const Navbar = props => {
                                         Posts
                                     </MenuItem>
                                 </NextLink>
-                                <NextLink href="/skills" passHref>
-                                    <MenuItem as={Link}>
-                                        Skills
-                                    </MenuItem>
-                                </NextLink>
                                 <NextLink href="/contact" passHref>
                                     <MenuItem as={Link}>
                                         Contact
                                     </MenuItem>
                                 </NextLink>
+                                <MenuDivider />
                                 <MenuItem as={Link} href="https://github.com/CaioFaSoares">
                                         Github
                                 </MenuItem>
