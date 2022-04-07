@@ -52,7 +52,7 @@ const Contact = ({path}) => {
 const NoContact = () => {
     return (
         <Text
-            color={useColorModeValue('blackAlpha.200', 'whiteAlpha.200')}
+            color={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
             p={2}
         >
             Contact
