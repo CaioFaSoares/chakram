@@ -102,7 +102,7 @@ const Navbar = props => {
                     <LinkItem href="/posts" path={path}>
                     Posts
                     </LinkItem>
-                    <Contact />
+                    <NoContact />
                     <LinkItem
                         target="_blank"
                         href="https://github.com/CaioFaSoares"
