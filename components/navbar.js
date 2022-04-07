@@ -168,13 +168,13 @@ const Navbar = props => {
                                     </MenuItem>
                                 </NextLink>
                                 <MenuDivider />
-                                <MenuItem as={Link} href="https://github.com/CaioFaSoares">
+                                <MenuItem as={Link} href="https://github.com/CaioFaSoares" passHref>
                                         Github
                                 </MenuItem>
-                                <MenuItem as={Link} href="https://www.behance.net/caiosoares1">
+                                <MenuItem as={Link} href="https://www.behance.net/caiosoares1" passHref>
                                         Behance
                                 </MenuItem>
-                                <MenuItem as={Link} href="https://www.linkedin.com/in/caio-soares-3153341a1/">
+                                <MenuItem as={Link} href="https://www.linkedin.com/in/caio-soares-3153341a1/" passHref>
                                         Linkedin
                                 </MenuItem>
                             </MenuList>

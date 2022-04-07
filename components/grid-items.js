@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
-export const GridItem = ({ children, href, title, thumbnail, url }) => {
+export const GridItem = ({ children, href, title, thumbnail}) => {
     return (
         <Box w="100%" align="center">
             <LinkBox cursor="pointer">
@@ -22,10 +22,10 @@ export const GridItem = ({ children, href, title, thumbnail, url }) => {
     )
 }
 
-export const WorkGridItem = ({children, id, title, thumbnail}) => {
+export const WorkGridItem = ({children, id, title, thumbnail, url}) => {
     return (
         <Box w="100%" align ="center">
-            <NextLink href={`/works/${id}`}>
+            <NextLink href={`${url}`}>
                 <LinkBox cursor="pointer">
                     <Image src={thumbnail}
                         alt={title}

@@ -17,13 +17,13 @@ const GraphicalSection = () => {
 
             <SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section>
-                    <WorkGridItem id="whitedot" title="WhiteDOT" thumbnail={thumbWhiteDOT}>
+                    <WorkGridItem id="whitedot" title="WhiteDOT" thumbnail={thumbWhiteDOT} url={"https://www.behance.net/gallery/118405161/Whitedot-Streetwear-Branding-Concept"}>
                         Brazilian streetwear brand identity for the
                         high-end "hype" consumer market.
                     </WorkGridItem>
                 </Section>
                 <Section>
-                    <WorkGridItem id="cidadecauype" title="Cidade Cauype" thumbnail={thumbCidadeCauype}>
+                    <WorkGridItem id="cidadecauype" title="Cidade Cauype" thumbnail={thumbCidadeCauype} url={"https://www.behance.net/gallery/118000147/Cidade-Cauype-Primeira-SmartCity-do-Ceara"}>
                         Social media work for the first smartcity in Ceará,
                         located near the ZPE.
                     </WorkGridItem>
@@ -53,7 +53,7 @@ const DevelopmentSection = () => {
 
                 <SimpleGrid columns={[1]} gap={6}>
                     <Section>
-                        <WorkGridItem id="kastor" title="Kastor" thumbnail={thumbKastor}>
+                        <WorkGridItem id="kastor" title="Kastor" thumbnail={thumbKastor} url={"https://github.com/CaioFaSoares/kastor"}>
                             MacOS CLI tool for customizing your dock.
                             FOSS, available on Brew.
                         </WorkGridItem>
