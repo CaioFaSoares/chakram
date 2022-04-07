@@ -24,7 +24,7 @@ const LinkItem = ({ href, path, children}) => {
     const active = path === href
     const activeColor = useColorModeValue('whiteAlpha.900', 'blackAlpha.900')
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-    const bgColor = useColorModeValue('purple.500', 'orange')
+    const bgColor = useColorModeValue('purple.500', 'orange.200')
     return (
         <NextLink href={href} passHref>
             <Link
@@ -52,7 +52,7 @@ const Contact = ({path}) => {
 const NoContact = () => {
     return (
         <Text
-            style={{ textDecorationLine: 'line-through' }}
+            color={useColorModeValue('blackAlpha.200', 'whiteAlpha.200')}
             p={2}
         >
             Contact
@@ -65,13 +65,13 @@ const Navbar = props => {
 
     return (
         <Box
-        position='fixed'
-        as='nav'
-        w='100%'
-        bg={useColorModeValue('#ffffff40', '#20202380')}
-        style={{backdropFilter:'blur(10px'}}
-        zIndex={1}
-        {...props}
+            position='fixed'
+            as='nav'
+            w='100%'
+            bg={useColorModeValue('#ffffff40', '#20202380')}
+            style={{backdropFilter:'blur(10px'}}
+            zIndex={1}
+            {...props}
         >
             <Container
                 display="flex"
@@ -102,7 +102,7 @@ const Navbar = props => {
                     <LinkItem href="/posts" path={path}>
                     Posts
                     </LinkItem>
-                    <Contact />
+                    <NoContact />
                     <LinkItem
                         target="_blank"
                         href="https://github.com/CaioFaSoares"
