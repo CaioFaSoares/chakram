@@ -1,5 +1,6 @@
 import { Button, Container, Box, Heading, Image, useColorModeValue, Divider } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { Button, Container, Box, Heading, Image, useColorModeValue, HStack } from '@chakra-ui/react'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
@@ -58,6 +59,11 @@ const Page = () => {
                     <NextLink href="/works">
                         <Button rightIcon={<ChevronRightIcon/>} colorScheme={useColorModeValue('purple', 'orange')}>
                             My portfolio
+                        </Button>
+                    </NextLink>
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightIcon/>} colorScheme={useColorModeValue('purple', 'orange')}>
+                            Get in touch
                         </Button>
                     </NextLink>
                 </Box>
