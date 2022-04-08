@@ -52,10 +52,31 @@ const Contact = ({path}) => {
 const NoContact = () => {
     return (
         <Text
-            color={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+            color={useColorModeValue('blackAlpha.100', 'whiteAlpha.200')}
             p={2}
         >
             Contact
+        </Text>
+    )
+}
+
+const Posts = ({path}) => { 
+    return (
+        <LinkItem href="/posts" path={path} >
+            <Text>
+                Posts
+            </Text>
+        </LinkItem>
+    )
+}
+
+const NoPosts = () => {
+    return (
+        <Text
+            color={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+            p={2}
+        >
+            Posts
         </Text>
     )
 }
@@ -99,9 +120,7 @@ const Navbar = props => {
                     <LinkItem href="/works" path={path}>
                     Works
                     </LinkItem>
-                    <LinkItem href="/posts" path={path}>
-                    Posts
-                    </LinkItem>
+                    <NoPosts />
                     <NoContact />
                     <LinkItem
                         target="_blank"
