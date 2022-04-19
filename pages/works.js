@@ -48,7 +48,7 @@ const DevelopmentSection = () => {
     return (
         <Section delay={0.2}>
                 <Heading as="h3" fontSize={20} mb={6} mt={3}>
-                    Development Work
+                    Programming Work
                 </Heading>
 
                 <SimpleGrid columns={[1]} gap={6}>
