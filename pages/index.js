@@ -49,8 +49,8 @@ const Page = () => {
                 <Paragraph>
                     Since 2020, I have worked in both marketing agencies and development
                     houses, both as a designer and developer.
-                    Currently I&apos;m studying iOS development and its design pattern at the
-                    Apple Developer Academy in Fortaleza, Ceará.
+                    Currently I&apos;m working as Social Media for NousiFinance and studying iOS development
+                    and its design pattern at the Apple Developer Academy in Fortaleza, Ceará.
                     I&apos;ve also done creative work for two brazilian streetwear brands and a
                     collective project called Homemade.
                 </Paragraph>
@@ -79,7 +79,7 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
-                    Got accepted to study Computer Engineering at the Federal Institute of Education, Science and Technology of Ceará.
+                    Enroled in Computer Engineering at the Federal Institute of Education, Science and Technology of Ceará.
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
