@@ -17,7 +17,7 @@ const Page = () => {
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             p={3} mt={3} mb={6} align="center"
             >
-                Hi, I&apos;m a designer and front-end developer based in Brazil
+                Hi, I&apos;m a designer and iOS engineer based in Brazil
             </Box>
 
             <Box display={{md:'flex'}}>
@@ -80,9 +80,6 @@ const Page = () => {
                 <BioSection>
                     <BioYear>2020</BioYear>
                     Enroled in Computer Engineering at the Federal Institute of Education, Science and Technology of Ceará.
-                </BioSection>
-                <BioSection>
-                    <BioYear>2020</BioYear>
                     Started working on PorCoral, a marketing agency located in Fortaleza as a designer.
                 </BioSection>
                 <BioSection>
@@ -90,7 +87,7 @@ const Page = () => {
                     Started working on Aurean, german start-up developing a CRM and Risk Management tool for supply chains as a designer and full-stack developer.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2021 to present</BioYear>
+                    <BioYear>2022 to present</BioYear>
                     Studying in the Apple Developer Academy, located in Fortaleza, Ceará
                 </BioSection>
             </Section>

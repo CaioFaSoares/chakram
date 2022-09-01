@@ -75,11 +75,11 @@ const DevelopmentSection = () => {
 const Works = () => {
     return (
         <Container>
-            <GraphicalSection/>
+            <DevelopmentSection/>
             <Section delay={0.1}>
                 <Divider/>
             </Section>
-            <DevelopmentSection/>
+            <GraphicalSection/>
         </Container>
     )
 }
