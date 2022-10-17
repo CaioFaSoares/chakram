@@ -17,7 +17,7 @@ const Page = () => {
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             p={3} mt={3} mb={6} align="center"
             >
-                Hi, I&apos;m a designer and iOS engineer based in Brazil
+                Hi, I&apos;m a UI/UX designer and iOS engineer based in Brazil
             </Box>
 
             <Box display={{md:'flex'}}>

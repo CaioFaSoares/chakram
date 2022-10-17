@@ -60,6 +60,27 @@ const NoContact = () => {
     )
 }
 
+const CurriculumVitae = ({path}) => { 
+    return (
+        <LinkItem href="/cv" path={path} >
+            <Text>
+                Contact
+            </Text>
+        </LinkItem>
+    )
+}
+
+const NoCurriculumVitae = () => {
+    return (
+        <Text
+            color={useColorModeValue('blackAlpha.100', 'whiteAlpha.200')}
+            p={2}
+        >
+            Contact
+        </Text>
+    )
+}
+
 const Posts = ({path}) => { 
     return (
         <LinkItem href="/posts" path={path} >
@@ -117,6 +138,7 @@ const Navbar = props => {
                     mt={{base: 4, md: 0}}
                     // ms={2}
                 >
+                    <NoCurriculumVitae /> 
                     <LinkItem href="/works" path={path}>
                     Works
                     </LinkItem>
@@ -169,6 +191,11 @@ const Navbar = props => {
                                 <NextLink href="/" passHref>
                                     <MenuItem as={Link}>
                                         About
+                                    </MenuItem>
+                                </NextLink>
+                                <NextLink href="/cv" passHref>
+                                    <MenuItem as={Link}>
+                                        Curriculum Vitae
                                     </MenuItem>
                                 </NextLink>
                                 <NextLink href="/works" passHref>
