@@ -1,5 +1,6 @@
 import { Button, Container, Box, Heading, Image, useColorModeValue, Divider } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import Layout from "../components/layouts/articles"
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
@@ -11,6 +12,7 @@ const Page = () => {
     const profilePicture = `/images/caio${useColorModeValue('', '-dark')}.png`
 
     return (
+        <Layout>
         <Container>
             <Box
             borderRadius="lg"
@@ -57,7 +59,7 @@ const Page = () => {
                 <Box align="center" my={4}>
                     <NextLink href="/works">
                         <Button rightIcon={<ChevronRightIcon/>} colorScheme={useColorModeValue('purple', 'orange')}>
-                            My portfolio
+                            See my work
                         </Button>
                     </NextLink>
                 </Box>
@@ -99,7 +101,8 @@ const Page = () => {
                     Art, design, emulation, games, horror movies, programming, punk music and tinkering.
                 </Paragraph>
             </Section>
-        </Container>
+        </Container>    
+        </Layout>
     )
 }
 

@@ -2,6 +2,7 @@ import { Container, Text, Tag, Heading, SimpleGrid, Divider, Box, Button, useCol
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-items'
+import Layout from '../components/layouts/articles'
 
 import NextLink from 'next/link'
 
@@ -15,7 +16,8 @@ const DevelopmentSection = () => {
                 Development Work
             </Heading>
 
-            <SimpleGrid columns={[2]} gap={6}>
+            <SimpleGrid columns={[2
+            ]} gap={6}>
                 <Section>
                     <WorkGridItem id="alastor" title="Alastor" thumbnail={thumbAlastor} url={"https://github.com/CaioFaSoares/alastor"}>
                         IOS 15 Crypto Prices App built using SwiftUI.
@@ -114,21 +116,23 @@ const Links = () => {
 
 const Works = () => {
     return (
-        <Container>
-            <DevelopmentSection />
-            <Section delay={0.1}>
-                <Divider />
-            </Section>
-            <UserIntefaceSection />
-            <Section delay={0.2}>
-                <Divider />
-            </Section>
-            <GraphicalSection />
-            <Section delay={0.3}>
-                <Divider />
-            </Section>
-            <Links />
-        </Container>
+        <Layout>
+            <Container>
+                <DevelopmentSection />
+                <Section delay={0.1}>
+                    <Divider />
+                </Section>
+                <UserIntefaceSection />
+                <Section delay={0.2}>
+                    <Divider />
+                </Section>
+                <GraphicalSection />
+                <Section delay={0.3}>
+                    <Divider />
+                </Section>
+                <Links />
+            </Container>
+        </Layout>
     )
 }
 
